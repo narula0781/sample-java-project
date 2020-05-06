@@ -1,7 +1,7 @@
 
 
 trigger: none
-pool: default
+pool: hosted
 resources:
   builds:
     - build: myjenkins
