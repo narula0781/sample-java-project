@@ -11,15 +11,12 @@ resources:
       branches:
       - master
 
-pool:
-  vmImage: 'ubuntu-latest'
-
 stages:
 - stage: stage1
   jobs:
       - job: test2
         displayName: test
-        pool: 'Hosted Agent'
+        pool: 'Azure Pipeline 2'
         steps:
         - task: Powershell@2
           inputs:
