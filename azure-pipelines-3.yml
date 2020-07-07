@@ -7,7 +7,7 @@ name: pipe2
 
 resources:
   pipelines:
-  - pipeline: pipe1
+  - pipeline: pipe2
     source: pipe1
     trigger:
       branches:
