@@ -6,7 +6,7 @@
 resources:
   pipelines:
   - pipeline: pipe1
-    source: pipe1
+    source: pipe1file
     trigger:
       branches:
       - test1
