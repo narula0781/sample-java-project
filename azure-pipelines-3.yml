@@ -9,9 +9,7 @@ resources:
     source: pipe1file
     trigger:
       branches:
-      - test1
-      - dev*
-      - dummybranch
+      - master
 
 pool:
   vmImage: 'ubuntu-latest'
