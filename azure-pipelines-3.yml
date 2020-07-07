@@ -10,19 +10,8 @@ resources:
     trigger:
       branches:
       - master
+      stages:
+        - stage1
 
 pool:
   vmImage: 'ubuntu-latest'
-
-
-stages:
-- stage: stage1
-  jobs:
-      - job: test2
-        displayName: test
-        steps:
-        - task: Powershell@2
-          inputs:
-              targetType: inline
-              script: |
-                Write-Host "Hello World!"
