@@ -11,7 +11,7 @@ resources:
       branches:
       - master
       stages:
-        - stage1
+        - stage2
 
 pool:
   vmImage: 'ubuntu-latest'
