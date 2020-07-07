@@ -3,8 +3,6 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-name: pipe2
-
 resources:
   pipelines:
   - pipeline: pipe2
@@ -14,3 +12,16 @@ resources:
       - test1
       - dev*
       - dummybranch
+
+stages:
+- stage: stage1
+  jobs:
+      - job: test2
+        displayName: test
+        pool: Default
+        steps:
+        - task: Powershell@2
+          inputs:
+              targetType: inline
+              script: |
+                Write-Host "Hello World!"
