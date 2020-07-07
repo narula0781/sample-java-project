@@ -19,7 +19,7 @@ stages:
   jobs:
       - job: test2
         displayName: test
-        pool: 'ubuntu-latest'
+        pool: 'Hosted Agent'
         steps:
         - task: Powershell@2
           inputs:
