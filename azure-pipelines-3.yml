@@ -13,6 +13,9 @@ resources:
       - dev*
       - dummybranch
 
+pool:
+  vmImage: 'ubuntu-latest'
+
 stages:
 - stage: stage1
   jobs:
