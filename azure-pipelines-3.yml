@@ -22,7 +22,6 @@ stages:
   jobs:
       - job: test2
         displayName: test
-        pool: Default
         steps:
         - task: Powershell@2
           inputs:
