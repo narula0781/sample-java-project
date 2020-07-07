@@ -19,7 +19,7 @@ stages:
   jobs:
       - job: test2
         displayName: test
-        pool: Default
+        pool: 'ubuntu-latest'
         steps:
         - task: Powershell@2
           inputs:
